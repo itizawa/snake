@@ -58,7 +58,7 @@ class App extends React.Component {
     );
   }
 
-  isGameover() {
+  isGameOver() {
     return this.isFrameOut() || this.isSuicided();
   }
 
@@ -71,13 +71,13 @@ class App extends React.Component {
   }
 
   countTime() {
-    if (this.isGameover()) return;
+    if (this.isGameOver()) return;
     this.setState({ time: this.state.time + 1 });
     setTimeout(this.countTime, 1000);
   }
 
   moveSnake() {
-    if (this.isGameover()) return;
+    if (this.isGameOver()) return;
     const newSnakeStatus = this.state.snakeStatus;
     let { speed, direction, body } = newSnakeStatus;
 
@@ -193,7 +193,7 @@ class App extends React.Component {
         <div id="map" style={mapStyle}>
           {mapTiles}
         </div>
-        {this.isGameover() && <h2>GameOver</h2>}
+        {this.isGameOver() && <h2>GameOver</h2>}
       </div>
     );
   }
