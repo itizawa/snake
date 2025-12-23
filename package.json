@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "classnames": "2.5.1",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
     "react-scripts": "5.0.1"
   },
   "scripts": {
@@ -30,6 +30,6 @@
     ]
   },
   "volta": {
-    "node": "22.15.0"
+    "node": "24.12.0"
   }
 }
